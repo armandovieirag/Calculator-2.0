@@ -1,0 +1,163 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+body {
+    padding: 0;
+    margin-top: 5%;
+    margin-left: 40%;
+    background: rgb(2,30,37);
+    background: linear-gradient(90deg, rgba(2,30,37,1) 15%, rgba(5,96,120,1) 52%, rgba(0,212,255,1) 84%);
+    overflow-x: hidden;
+}
+.container {
+    height: 810px;
+    width: 400px;
+    position: relative;
+    border-radius: 22px;
+    overflow-y: hidden;
+}
+
+.calculator-space{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(200px, auto)repeat(5, 100px);
+}
+
+.calculator-space > button{
+    font-size: 2em;
+    outline: none;
+    border: none;
+    margin-top: 1.4em;
+    margin-left: 15px;
+}
+.calculator-space > button:hover {
+  background-color:rgb(255, 1, 1);
+  color:white;
+}
+
+.calculator-space > .span-main{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 1.1em;
+    margin-left: .4em;
+}
+
+.calculator-space .green{
+    color: white;
+    background-color: rgb(10, 228, 210);
+}
+
+.final-result{
+    grid-column: 1 / -1;
+    background-color: #ecfafa;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 100%;
+}
+
+.final-result .previuos-operation{
+    font-size: 2em;
+}
+
+.final-result .post-operation{
+    font-size: 2.6em;
+    font-weight: bold;
+}
+/*                            boton de toggle*/
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+margin-left: 80%;
+margin-top: 1em;
+}
+
+.switch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: lightgreen;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*                             clases de los botones*/
+
+.whitem {
+    background-color: white;
+    color: black;
+}
+.whitems {
+    background-color: #ecfafa;
+}
+
+.dark-mode{
+  background-color: rgb(36, 35, 35);
+  color: white;
+}
+
+.dark-ms{
+    color: rgb(10, 228, 210);
+    background-color: rgba(59, 59, 59, 0.432);
+}
+
+/*                              botones apple */
+
+.buttons{
+  position: relative;
+  display: inline-block;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 1em;
+  }
+
+

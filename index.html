@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container whitem">
+        <div class="top-bar whitems">
+            <div class="buttons">
+                <a  href="#" onclick="closeWin()"><img src="/lavado-en-seco.png" width="4%" alt=""></a>&nbsp;&nbsp;<a href="" onclick="openWin()"><img src="/lavado-en-seco (1).png" width="4%" alt=""></a>&nbsp;&nbsp;<a href=""><img src="/lavado-en-seco (2).png" width="4%" alt=""></a>
+            </div>
+            <label class="switch">
+                <input id="cambiador" type="checkbox" onclick="darkMode();darkMode2()" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="calculator-space">
+            <div class="final-result whitems">
+                <div data-previous-operand class="previuos-operation"></div>
+                <div data-current-operand class="post-operation"></div>
+            </div>
+            <button data-all-clear class="span-main whitems">C</button>
+            <button data-negate class="span-main whitems">±</button>
+            <button data-operation class="span-main whitems">%</button>
+            <button data-operation class="span-main whitems">÷</button>
+            <button data-number class="whitem">7</button>
+            <button data-number class="whitem">8</button>
+            <button data-number class="whitem">9</button>
+            <button data-operation class="span-main whitems">x</button>
+            <button data-number class="whitem">4</button>
+            <button data-number class="whitem">5</button>
+            <button data-number class="whitem">6</button>
+            <button data-operation class="span-main whitems">-</button>
+            <button data-number class="whitem">1</button>
+            <button data-number class="whitem">2</button>
+            <button data-number class="whitem">3</button>
+            <button data-operation class="span-main whitems">+</button>
+            <button data-number class="whitem">00</button>
+            <button data-number class="whitem">0</button>
+            <button data-number class="whitem">.</button>
+            <button data-equals class="span-main whitems green">=</button> 
+        </div>
+    </div>
+</body>
+</html>
